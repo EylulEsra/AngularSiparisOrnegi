@@ -1,0 +1,43 @@
+<h2>*ngFor Örnek</h2>
+
+<ul>
+    <li *ngFor="let reyon of reyonlar">{{reyon}}</li>
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <td>Sıra</td>
+            <td>Reyon</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let reyon of reyonlar; index as i"> <!---burda her meyveye indis verdi i ile-->
+            <td>{{i + 1}}/{{reyonlar.length}}</td> 
+            <td>{{reyon}}</td>
+        </tr>
+    </tbody>
+</table>
+<dl>
+    <ng-template ngFor let-r [ngForOf]="reyonlar" let-j="index">
+        <dt>{{reyonlar.length}} reyondan {{j+1}}.</dt>
+        <dd>{{r}}</dd>
+    </ng-template>
+   
+</dl>
+
+<ol style="list-style-type: circhle;">
+    <li *ngFor="let ryn of reyonlar; index as k; first as ilk; last as son; odd as tek; even as cift; count as toplam;">
+    
+        {{k + 1}} / {{ toplam }} -> {{ ryn }}
+        
+        <span *ngIf="cift"> - Çift - </span>
+        <span *ngIf="tek"> - Tek</span>
+        <span *ngIf="ilk">İlk Eleman</span>
+        <span *ngIf="son">Son Eleman</span>
+
+    </li>
+</ol>
+<hr>
+
+

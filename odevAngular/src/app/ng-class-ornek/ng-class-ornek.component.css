@@ -1,0 +1,24 @@
+.sariZemin{
+    background-color: yellow;
+}
+
+.kirmiziZemin{
+    background-color: red;
+}
+
+.maviZemin{
+    background-color: blue;
+}
+
+
+.siyahYazi{
+    color: black;
+}
+
+.kirmiziYazi{
+    color: red;
+}
+
+.beyazYazi{
+    color:white;
+}

@@ -1,0 +1,29 @@
+<section [ngSwitch]="tarih">
+  <div *ngSwitchCase="'06022021'">
+  <app-siparis-binding-ornek></app-siparis-binding-ornek>
+  <hr>
+  <app-reyon-binding-ornek></app-reyon-binding-ornek>
+  <hr>
+  <app-siparis-verme-binding-ornek></app-siparis-verme-binding-ornek>
+  <hr>
+  <app-poset-rengi-ornek></app-poset-rengi-ornek>
+  <hr>
+  <app-teslimat-bilgileri-ornek></app-teslimat-bilgileri-ornek>
+  <hr>
+  <app-two-way-binding-ornek></app-two-way-binding-ornek>
+  <hr>
+  </div>
+  <div *ngSwitchCase="'05022021'">
+      <h1>04 Şubat 2021 Çarşamba</h1>
+      <app-ust-ornek></app-ust-ornek>
+      <hr>
+      <app-ust-ornek></app-ust-ornek>
+      <hr>
+      <app-ng-style-ornek></app-ng-style-ornek>
+      <hr>
+      <app-ng-for-ornek></app-ng-for-ornek>
+  </div>
+  <div *ngSwitchDefault>
+      <p>Bilinmeyen tarih</p>
+  </div>
+  </section>

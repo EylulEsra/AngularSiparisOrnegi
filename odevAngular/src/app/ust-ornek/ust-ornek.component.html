@@ -1,0 +1,11 @@
+<h2>Sipariş Tarihi</h2>
+
+<label>Sayı: <input #deger value="7"/></label>
+<button (click)="degiskeniDegistir(+deger.value)">Onayla</button>
+
+<app-alt-ornek [sayi]="degisken" ></app-alt-ornek>
+
+<app-alt-ornek [sayi]="12" [Yas]="23" ></app-alt-ornek>
+
+<hr>
+

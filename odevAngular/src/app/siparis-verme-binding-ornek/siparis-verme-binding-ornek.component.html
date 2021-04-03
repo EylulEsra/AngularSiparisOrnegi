@@ -1,0 +1,12 @@
+<h2>Sipariş Ekranı</h2>
+<button (click)="Degistir()">Sepet Durumu</button>
+
+
+
+<p *ngIf="goster; else abc">Sipariş verin</p>
+<ng-template #abc>
+    <p>Sepette bekletin</p>
+</ng-template>
+
+<hr>
+
